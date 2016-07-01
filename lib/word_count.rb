@@ -5,11 +5,13 @@ class String
     input_string = self.downcase().gsub(/[^a-zA-Z. ]/,"")
     words = input_string.split()
     word_count  = 0
+
     words.each do |word|
       if word == word_to_count
         word_count += 1
       end
     end
-    word_count
+
+    word_count #return the count
   end
 end

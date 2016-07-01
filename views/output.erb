@@ -1,2 +1,6 @@
 <h3>We have determined that:</h3>
-<p>The word <strong><%= @input_word%></strong> exists <strong><%= @word_count %></strong> times in the sentence <strong><%= @input_string%></strong></p>
+<% if @word_count > 0 %>
+  <p>The word <strong><%= @input_word%></strong> exists <strong><%= @word_count %></strong> times in the sentence <strong><%= @input_string %></strong></p>
+<% else %>
+  <p>The word <strong><%= @input_word%></strong> does not exist in the sentence <strong><%= @input_string %></strong></p>
+<% end %>
