@@ -7,7 +7,7 @@ class String
     word_count  = 0
 
     words.each do |word|
-      if word == word_to_count
+      if word == word_to_count.downcase()
         word_count += 1
       end
     end
